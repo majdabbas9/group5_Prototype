@@ -21,9 +21,6 @@ import java.util.List;
 
 public class AllStudents {
 
-    //@FXML // fx:id="StudentsList"
-    //private ListView<String> StudentsList; // Value injected by FXMLLoader
-
     @FXML
     private TableView tableView;
     @FXML
@@ -57,7 +54,6 @@ public class AllStudents {
         List<Student> students = (List<Student>) Data.students;
         ObservableList<Student> observableList = FXCollections.observableArrayList();
         for (Student s: students){
-            //observableList.add(new Student(s.getId(),s.getFirstName(),s.getSecondName(),s.getIdNum()));
             observableList.add(s);
         }
         studentNo.setCellValueFactory(new PropertyValueFactory<Student,Integer>("id"));
