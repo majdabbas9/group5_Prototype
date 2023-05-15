@@ -349,7 +349,7 @@ public abstract class AbstractClient implements Runnable
    *
    * @param msg   the message sent.
    */
-  protected abstract void handleMessageFromServer(Object msg);
+  protected abstract void handleMessageFromServer(Object msg) throws IOException;
 
 
 // METHODS TO BE USED FROM WITHIN THE FRAMEWORK ONLY ----------------

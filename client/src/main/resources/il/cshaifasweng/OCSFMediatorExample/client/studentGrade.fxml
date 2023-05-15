@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.StudentGrade">
+    <children>
+        <Button layoutX="14.0" layoutY="449.0" mnemonicParsing="false" onAction="#backToAll" text="back to all students" />
+        <Button layoutX="310.0" layoutY="239.0" mnemonicParsing="false" onAction="#updateGrade" prefHeight="44.0" prefWidth="88.0" text="update grade" />
+        <TextField fx:id="newGrade" layoutX="279.0" layoutY="165.0" prefHeight="44.0" prefWidth="150.0" text="New Grade" />
+        <TableView fx:id="gradeTable" layoutX="72.0" layoutY="100.0" onMouseClicked="#tableClicked" prefHeight="273.0" prefWidth="167.0">
+            <columns>
+                <TableColumn fx:id="gradeNO" prefWidth="75.0" text="Grade No." />
+                <TableColumn fx:id="Grade" prefWidth="89.5999755859375" text="Grade" />
+            </columns>
+        </TableView>
+        <Text fx:id="studentName" layoutX="117.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" />
+        <Text fx:id="StudentID" layoutX="303.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" />
+        <Text fx:id="warining" fill="#ff0101" layoutX="70.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="362.81212615966797" />
+        <Text layoutX="72.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " />
+        <Text layoutX="279.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID: " />
+    </children>
+</AnchorPane>
